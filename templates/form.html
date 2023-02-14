@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>WATER QUALTY PREDICTION</title>
+<style>
+  input{
+     width: 50%;
+     padding: 12px 20px;
+     margin: 50px 0;
+     box-sizing: border-box;
+     text-align: center;
+     color: black;
+}
+body{
+    background-image:url("https://i.pinimg.com/originals/05/3f/fd/053ffdcbadba8e15a0147ce01f993c9d.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(242, 237, 237);
+   }
+   </style>
+   </head>
+
+<body>
+  <center>
+    <h1> WATER QUALITY PREDICTION</h1>
+<form action="/form" method="post">
+    <div class="elem-group">
+      <label for="pH">pH:</label>
+      <input type="number" id="pH" name="pH" placeholder="pH of 1. Water (0 to 14)" >
+    </div>
+    <div class="elem-group">
+      <label for="Hardness">Hardness</label>
+      <input type="text" id="Hardness" name="Hardness" placeholder="Capacity of water to precipitate soap in mg/L" required>
+    </div>
+    <div class="elem-group">
+      <label for="Solids">Solids</label>
+      <input type="text" id="Solids" name="Solids" placeholder="Total dissolved solids in ppm" required>
+    </div>
+    <div class="elem-group inlined"> 
+      <label for="Chloramines">Chloramines</label>
+      <input type="text" id="Chloramines" name="Chloramines" placeholder="Amount of Chloramines" required>
+    </div>
+    <div class="elem-group inlined">
+    <label for="Sulfate">Sulfate</label>
+    <input type="text" id="Sulfate" name="Sulfate"  placeholder="Amount of organic carbon in ppm" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="Condcutivity">Conductivity</label>
+    <input type="text" id="Conductivity" name="Conductivity" placeholder="Electrical comductivity of water in microS/cm" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="Organic_carbon">Organic_carbon</label>
+    <input type="text" id="Organic_carbon" name="Organic_carbon" placeholder="Amount of organic carbon in ppm" required>
+  </div>
+    <div class="elem-group">
+      <label for="Trihalomethanes"> Trihalomethanes </label>
+      <input  type="text" id="Trihalomethanes" name="Trihalomethanes" placeholder="Amount of Trihalomethanes in microg/L" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="Turbidity">Turbidity</label>
+      <input type="text" id="Turbidity" name="Turbidity" placeholder="Measure of light emiting property of water in NTU" required>
+    </div>
+    <br>
+    <input type="submit" value="SUBMIT">
+  </form>
+</center>
+</p>
+</body>
+</html>

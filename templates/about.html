@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <style>
+   @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+  color: #333;
+  background: #fcfcfc;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.faq-header{
+  font-size: 42px;
+  border-bottom: 1px dotted #ccc;
+  padding: 24px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="faq-header">Know more about the attributes!</div>
+    </center>
+      <div class="faq-content">
+        <div class="faq-question">
+          <input id="q1" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q1" class="panel-title">1. pH value</label>
+          <div class="panel-content">PH is an important parameter in evaluating the acid–base balance of water. It is also the indicator of acidic or alkaline condition of water status. WHO has recommended maximum permissible limit of pH from 6.5 to 8.5. The current investigation ranges were 6.52–6.83 which are in the range of WHO standards.</div>
+        </div>
+        
+        <div class="faq-question">
+          <input id="q2" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q2" class="panel-title">2. Hardness</label>
+          <div class="panel-content">Hardness is mainly caused by calcium and magnesium salts. These salts are dissolved from geologic deposits through which water travels. The length of time water is in contact with hardness producing material helps determine how much hardness there is in raw water. Hardness was originally defined as the capacity of water to precipitate soap caused by Calcium and Magnesium.</div>
+        </div>
+        
+        <div class="faq-question">
+          <input id="q3" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q3" class="panel-title">3. Solids (Total dissolved solids - TDS)</label>
+          <div class="panel-content">Water has the ability to dissolve a wide range of inorganic and some organic minerals or salts such as potassium, calcium, sodium, bicarbonates, chlorides, magnesium, sulfates etc. These minerals produced un-wanted taste and diluted color in appearance of water. This is the important parameter for the use of water. The water with high TDS value indicates that water is highly mineralized. Desirable limit for TDS is 500 mg/l and maximum limit is 1000 mg/l which prescribed for drinking purpose.</div>
+        </div>
+        <div class="faq-question">
+          <input id="q4" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q4" class="panel-title">4. Chloramines</label>
+          <div class="panel-content">Chlorine and chloramine are the major disinfectants used in public water systems. Chloramines are most commonly formed when ammonia is added to chlorine to treat drinking water. Chlorine levels up to 4 milligrams per liter (mg/L or 4 parts per million (ppm)) are considered safe in drinking water.</div>
+        </div><div class="faq-question">
+          <input id="q5" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q5" class="panel-title">5. Sulfate</label>
+          <div class="panel-content">Sulfates are naturally occurring substances that are found in minerals, soil, and rocks. They are present in ambient air, groundwater, plants, and food. The principal commercial use of sulfate is in the chemical industry. Sulfate concentration in seawater is about 2,700 milligrams per liter (mg/L). It ranges from 3 to 30 mg/L in most freshwater supplies, although much higher concentrations (1000 mg/L) are found in some geographic locations.</div>
+        </div><div class="faq-question">
+          <input id="q6" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q6" class="panel-title">6. Conductivity</label>
+          <div class="panel-content">Pure water is not a good conductor of electric current rather’s a good insulator. Increase in ions concentration enhances the electrical conductivity of water. Generally, the amount of dissolved solids in water determines the electrical conductivity. Electrical conductivity (EC) actually measures the ionic process of a solution that enables it to transmit current. According to WHO standards, EC value should not exceeded 400 μS/cm.</div>
+        </div><div class="faq-question">
+          <input id="q7" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q7" class="panel-title">7. Organic_carbon</label>
+          <div class="panel-content">Total Organic Carbon (TOC) in source waters comes from decaying natural organic matter (NOM) as well as synthetic sources. TOC is a measure of the total amount of carbon in organic compounds in pure water. According to US EPA < 2 mg/L as TOC in treated / drinking water, and < 4 mg/Lit in source water which is use for treatment.</div>
+        </div><div class="faq-question">
+          <input id="q8" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q8" class="panel-title">8. Trihalomethanes</label>
+          <div class="panel-content">THMs are chemicals which may be found in water treated with chlorine. The concentration of THMs in drinking water varies according to the level of organic material in the water, the amount of chlorine required to treat the water, and the temperature of the water that is being treated. THM levels up to 80 ppm is considered safe in drinking water.</div>
+        </div><div class="faq-question">
+          <input id="q9" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q9" class="panel-title">9. Turbidity</label>
+          <div class="panel-content">The turbidity of water depends on the quantity of solid matter present in the suspended state. It is a measure of light emitting properties of water and the test is used to indicate the quality of waste discharge with respect to colloidal matter. The mean turbidity value obtained for Wondo Genet Campus (0.98 NTU) is lower than the WHO recommended value of 5.00 NTU.</div>
+        </div><div class="faq-question">
+          <input id="q10" type="checkbox" class="panel">
+          <div class="plus">+</div>
+          <label for="q10" class="panel-title">10. Potability</label>
+          <div class="panel-content">Indicates if water is safe for human consumption where 1 means Potable and 0 means Not potable.</div>
+        </div>
+      </div>
+
+</body>
+</html>

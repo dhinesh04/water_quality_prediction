@@ -28,11 +28,11 @@ def input():
         
         predict=model.predict([[ph, hardness, solids, chloramines, sulfate, conductivity,
         organic_carbon, trihalomethanes, turbidity]])
-        if predict[0]==0:
+        if predict[0]==1:
             msg="Water is safe to drink"
             return render_template('output_safe.html',msg=msg)
 
-        elif predict[0]==1:
+        elif predict[0]==0:
             msg="Water is not safe"
             return render_template('output_unsafe.html', msg=msg)
 
